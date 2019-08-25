@@ -1,0 +1,255 @@
+body {
+    margin: 0 auto;
+    overflow: hidden
+}
+
+nav {
+    border-bottom: 0px solid;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(33, 124, 215, 0.5);    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 20px;
+    overflow: hidden;
+    font-family: "arial", sans-serif;
+}
+  
+li {
+    float: right;
+}
+
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #387c93;
+}
+  
+li.logo {
+    padding: 13px;
+    font-family: 'Righteous', cursive;
+    color: white;
+    float: left;
+}
+  
+.image-header {
+    position: relative;
+    text-align: left;
+    color: white;
+    margin: auto;
+    width: 100%;
+}
+
+.image-header .title-image {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(33, 124, 215, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px 0;
+    left: 0%;
+  }
+
+.title-image {
+    position: relative;
+    bottom: 200px;
+    left : 50px;
+    font-family: Verdana;
+}
+
+.title-image h1, h3 {
+    margin: 20px;
+}
+ 
+.content-tentang {
+    background-image: url('tentang.png');
+    width: 100%;
+    height: 100vh;
+}
+
+.foto-tentang {
+    float: left;
+    width: 45%;
+    height: 200px;
+    padding: 150px 20px;
+}
+
+.isi-tentang {
+    float: left;
+    width: 50%;
+    height: 200px;
+}
+
+.isi-tentang h1 {
+    padding: 130px 0 0 0;
+    font-family: Verdana;
+    font-size: 38px;
+}
+
+.isi-tentang p {
+    font-family: Arial;
+    line-height: 2;
+    font-size: 24px;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .foto-tentang {
+      width: 100%;
+    }
+    .isi-tentang {
+        width: 100%;
+    }
+}
+
+.content-pendidikan {
+    background-image: url('pendidika.jpg');
+    height: 100vh;
+}
+
+.foto-pendidikan {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    margin: 160px 52px;
+    float: left;
+  }
+  
+  .foto-pendidikan:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .isi-pendidikan {
+    padding: 2px 16px;
+    text-align: center;
+  }
+
+  .content-kontak {
+      background-color: #bfbebe;
+      height: 100vh;
+      padding: 150px;
+  }
+
+.nama input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('name.png');
+    background-position: 0 0; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.alamat input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('home.png');
+    background-position: 0 0; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.phone input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('phone.png');
+    background-position: 0 0; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.email input[type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('email.png');
+    background-position: 0 0; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.linkedin input[type=text]{
+    width: 88%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('linkedin.png');
+    background-position: 0 0; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.linkedin button {
+    float: right;
+    padding: 12px 20px 12px 20px;
+    background: #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.github input[type=text]{
+    width: 89%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('github.png');
+    background-position: 0 0; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.github button {
+    float: right;
+    padding: 12px 20px 12px 20px;
+    background: #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  }
